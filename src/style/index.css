@@ -1,0 +1,31 @@
+.list-style {
+  margin: auto;
+  max-width: 40em;
+  padding: 0.5em 1em;
+}
+
+.row-style {
+  display: block;
+  position: relative;
+  padding: 1em 1em 1em 16%;
+  margin: 0 auto;
+  border-bottom: solid 1px #ddd;
+}
+
+.row-style:last-child {
+  border-bottom: none;
+}
+
+.end-section {
+  display: flex;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+.end-section .input-field {
+  padding: 5px;
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+}

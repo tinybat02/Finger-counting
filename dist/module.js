@@ -2733,9 +2733,6 @@ function (_super) {
       onClick: this.handleAddStore
     }, "Add"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "btn btn-primary",
-      style: {
-        marginLeft: 5
-      },
       onClick: this.handleReset
     }, "Reset")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "list-style"

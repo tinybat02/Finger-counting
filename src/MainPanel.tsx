@@ -114,7 +114,7 @@ export class MainPanel extends PureComponent<Props, State> {
           <button className="btn btn-primary" style={{ marginLeft: 5 }} onClick={this.handleAddStore}>
             Add
           </button>
-          <button className="btn btn-primary" style={{ marginLeft: 5 }} onClick={this.handleReset}>
+          <button className="btn btn-primary" onClick={this.handleReset}>
             Reset
           </button>
         </div>

@@ -1,3 +1,23 @@
+.iheader {
+  display: flex;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.idropdown {
+  @media (max-width: 480px) {
+    margin: 0 auto;
+  }
+}
+
+.ibuttons {
+  display: flex;
+  @media (max-width: 480px) {
+    margin: 0 auto;
+  }
+}
+
 .list-style {
   margin: auto;
   max-width: 40em;

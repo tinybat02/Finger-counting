@@ -97,7 +97,7 @@ define(["@grafana/ui","react"], function(__WEBPACK_EXTERNAL_MODULE__grafana_ui__
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 16%;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n", "",{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB,EAAE;;AAEtB;EACE,cAAc;EACd,kBAAkB;EAClB,wBAAwB;EACxB,cAAc;EACd,6BAA6B,EAAE;;AAEjC;EACE,mBAAmB,EAAE;;AAEvB;EACE,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,SAAS;EACT,UAAU,EAAE;;AAEd;EACE,YAAY;EACZ,yBAAyB;EACzB,kBAAkB,EAAE","file":"index.css","sourcesContent":[".list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 16%;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n"]}]);
+exports.push([module.i, ".iheader {\n  display: flex; }\n  @media (max-width: 480px) {\n    .iheader {\n      flex-direction: column; } }\n\n@media (max-width: 480px) {\n  .idropdown {\n    margin: 0 auto; } }\n\n.ibuttons {\n  display: flex; }\n  @media (max-width: 480px) {\n    .ibuttons {\n      margin: 0 auto; } }\n\n.list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 16%;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n", "",{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;EACE,aAAa,EAAE;EACf;IACE;MACE,sBAAsB,EAAE,EAAE;;AAEhC;EACE;IACE,cAAc,EAAE,EAAE;;AAEtB;EACE,aAAa,EAAE;EACf;IACE;MACE,cAAc,EAAE,EAAE;;AAExB;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB,EAAE;;AAEtB;EACE,cAAc;EACd,kBAAkB;EAClB,wBAAwB;EACxB,cAAc;EACd,6BAA6B,EAAE;;AAEjC;EACE,mBAAmB,EAAE;;AAEvB;EACE,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,SAAS;EACT,UAAU,EAAE;;AAEd;EACE,YAAY;EACZ,yBAAyB;EACzB,kBAAkB,EAAE","file":"index.css","sourcesContent":[".iheader {\n  display: flex; }\n  @media (max-width: 480px) {\n    .iheader {\n      flex-direction: column; } }\n\n@media (max-width: 480px) {\n  .idropdown {\n    margin: 0 auto; } }\n\n.ibuttons {\n  display: flex; }\n  @media (max-width: 480px) {\n    .ibuttons {\n      margin: 0 auto; } }\n\n.list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 16%;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -2704,11 +2704,9 @@ function (_super) {
         overflow: 'scroll'
       }
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      style: {
-        display: 'flex',
-        verticalAlign: 'middles'
-      }
+      className: "iheader"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+      className: "idropdown",
       value: floor,
       onChange: this.handleFloorChange
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
@@ -2716,6 +2714,7 @@ function (_super) {
     }, "Ground Floor"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
       value: -1
     }, "Basement")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+      className: "idropdown",
       value: currentStore,
       onChange: this.handleSelectStore
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
@@ -2725,7 +2724,9 @@ function (_super) {
         key: storeName,
         value: storeName
       }, storeName);
-    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "ibuttons"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "btn btn-primary",
       style: {
         marginLeft: 5
@@ -2734,7 +2735,7 @@ function (_super) {
     }, "Add"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "btn btn-primary",
       onClick: this.handleReset
-    }, "Reset")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, "Reset"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "list-style"
     }, currentListStore.map(function (store) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {

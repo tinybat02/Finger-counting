@@ -98,12 +98,12 @@ export class MainPanel extends PureComponent<Props, State> {
           overflow: 'scroll',
         }}
       >
-        <div style={{ display: 'flex', verticalAlign: 'middles' }}>
-          <select value={floor} onChange={this.handleFloorChange}>
+        <div className="iheader">
+          <select className="idropdown" value={floor} onChange={this.handleFloorChange}>
             <option value={0}>Ground Floor</option>
             <option value={-1}>Basement</option>
           </select>
-          <select value={currentStore} onChange={this.handleSelectStore}>
+          <select className="idropdown" value={currentStore} onChange={this.handleSelectStore}>
             <option value="None">None</option>
             {storeList.map(storeName => (
               <option key={storeName} value={storeName}>
@@ -111,12 +111,14 @@ export class MainPanel extends PureComponent<Props, State> {
               </option>
             ))}
           </select>
-          <button className="btn btn-primary" style={{ marginLeft: 5 }} onClick={this.handleAddStore}>
-            Add
-          </button>
-          <button className="btn btn-primary" onClick={this.handleReset}>
-            Reset
-          </button>
+          <div className="ibuttons">
+            <button className="btn btn-primary" style={{ marginLeft: 5 }} onClick={this.handleAddStore}>
+              Add
+            </button>
+            <button className="btn btn-primary" onClick={this.handleReset}>
+              Reset
+            </button>
+          </div>
         </div>
         <div className="list-style">
           {currentListStore.map(store => (

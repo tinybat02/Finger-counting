@@ -31,6 +31,16 @@ const initialState = {
   fileName: '',
 };
 
+const countInside = (data: Record[], storeName: string) => {
+  let count = 0;
+  data.map(item => {
+    if (item.store == storeName) {
+      item.num == 1 ? ++count : --count;
+    }
+  });
+  return count;
+};
+
 export class MainPanel extends PureComponent<Props, State> {
   state: State = { ...initialState };
   componentDidUpdate(prevProps: Props, prevState: State) {
@@ -94,6 +104,17 @@ export class MainPanel extends PureComponent<Props, State> {
     this.setState({ data: [...this.state.data, record] });
   };
 
+  addDataRecordMinus = (store: string) => () => {
+    const record = {
+      timestamp: Math.round(new Date().getTime() / 1000),
+      floor: this.state.floor,
+      store,
+      num: -1,
+    };
+
+    this.setState({ data: [...this.state.data, record] });
+  };
+
   handleInputField = (e: React.ChangeEvent<HTMLInputElement>) => {
     this.setState({ fileName: e.target.value });
   };
@@ -140,15 +161,22 @@ export class MainPanel extends PureComponent<Props, State> {
           {currentListStore.map(store => (
             <div key={store} className="row-style">
               <span>{store}</span>
-              <span style={{ position: 'absolute', right: 50 }}>
-                {data.filter(record => record.store == store).length}
+              <span style={{ position: 'absolute', right: 90 }}>
+                {/* data.filter(record => record.store == store && record.num == 1).length */ countInside(data, store)}
               </span>
               <button
                 className="btn btn-primary"
-                style={{ position: 'absolute', top: 10, right: 0 }}
+                style={{ position: 'absolute', top: 10, right: 40 }}
                 onClick={this.addDataRecord(store)}
               >
                 +
+              </button>
+              <button
+                className="btn btn-primary"
+                style={{ position: 'absolute', top: 10, right: 0 }}
+                onClick={this.addDataRecordMinus(store)}
+              >
+                -
               </button>
             </div>
           ))}

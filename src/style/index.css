@@ -27,7 +27,7 @@
 .row-style {
   display: block;
   position: relative;
-  padding: 1em 1em 1em 16%;
+  padding: 1em 1em 1em 0;
   margin: 0 auto;
   border-bottom: solid 1px #ddd;
 }

@@ -97,7 +97,7 @@ define(["@grafana/ui","react"], function(__WEBPACK_EXTERNAL_MODULE__grafana_ui__
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".iheader {\n  display: flex; }\n  @media (max-width: 480px) {\n    .iheader {\n      flex-direction: column; } }\n\n@media (max-width: 480px) {\n  .idropdown {\n    margin: 0 auto; } }\n\n.ibuttons {\n  display: flex; }\n  @media (max-width: 480px) {\n    .ibuttons {\n      margin: 0 auto; } }\n\n.list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 16%;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n", "",{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;EACE,aAAa,EAAE;EACf;IACE;MACE,sBAAsB,EAAE,EAAE;;AAEhC;EACE;IACE,cAAc,EAAE,EAAE;;AAEtB;EACE,aAAa,EAAE;EACf;IACE;MACE,cAAc,EAAE,EAAE;;AAExB;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB,EAAE;;AAEtB;EACE,cAAc;EACd,kBAAkB;EAClB,wBAAwB;EACxB,cAAc;EACd,6BAA6B,EAAE;;AAEjC;EACE,mBAAmB,EAAE;;AAEvB;EACE,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,SAAS;EACT,UAAU,EAAE;;AAEd;EACE,YAAY;EACZ,yBAAyB;EACzB,kBAAkB,EAAE","file":"index.css","sourcesContent":[".iheader {\n  display: flex; }\n  @media (max-width: 480px) {\n    .iheader {\n      flex-direction: column; } }\n\n@media (max-width: 480px) {\n  .idropdown {\n    margin: 0 auto; } }\n\n.ibuttons {\n  display: flex; }\n  @media (max-width: 480px) {\n    .ibuttons {\n      margin: 0 auto; } }\n\n.list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 16%;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n"]}]);
+exports.push([module.i, ".iheader {\n  display: flex; }\n  @media (max-width: 480px) {\n    .iheader {\n      flex-direction: column; } }\n\n@media (max-width: 480px) {\n  .idropdown {\n    margin: 0 auto; } }\n\n.ibuttons {\n  display: flex; }\n  @media (max-width: 480px) {\n    .ibuttons {\n      margin: 0 auto; } }\n\n.list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 0;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n", "",{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;EACE,aAAa,EAAE;EACf;IACE;MACE,sBAAsB,EAAE,EAAE;;AAEhC;EACE;IACE,cAAc,EAAE,EAAE;;AAEtB;EACE,aAAa,EAAE;EACf;IACE;MACE,cAAc,EAAE,EAAE;;AAExB;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB,EAAE;;AAEtB;EACE,cAAc;EACd,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;EACd,6BAA6B,EAAE;;AAEjC;EACE,mBAAmB,EAAE;;AAEvB;EACE,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,SAAS;EACT,UAAU,EAAE;;AAEd;EACE,YAAY;EACZ,yBAAyB;EACzB,kBAAkB,EAAE","file":"index.css","sourcesContent":[".iheader {\n  display: flex; }\n  @media (max-width: 480px) {\n    .iheader {\n      flex-direction: column; } }\n\n@media (max-width: 480px) {\n  .idropdown {\n    margin: 0 auto; } }\n\n.ibuttons {\n  display: flex; }\n  @media (max-width: 480px) {\n    .ibuttons {\n      margin: 0 auto; } }\n\n.list-style {\n  margin: auto;\n  max-width: 40em;\n  padding: 0.5em 1em; }\n\n.row-style {\n  display: block;\n  position: relative;\n  padding: 1em 1em 1em 0;\n  margin: 0 auto;\n  border-bottom: solid 1px #ddd; }\n\n.row-style:last-child {\n  border-bottom: none; }\n\n.end-section {\n  display: flex;\n  padding: 1em;\n  position: absolute;\n  bottom: 0;\n  left: 30px; }\n\n.end-section .input-field {\n  padding: 5px;\n  border: solid 1px #c6c6c6;\n  border-radius: 3px; }\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -2607,6 +2607,16 @@ var initialState = {
   fileName: ''
 };
 
+var countInside = function countInside(data, storeName) {
+  var count = 0;
+  data.map(function (item) {
+    if (item.store == storeName) {
+      item.num == 1 ? ++count : --count;
+    }
+  });
+  return count;
+};
+
 var MainPanel =
 /** @class */
 function (_super) {
@@ -2649,6 +2659,21 @@ function (_super) {
           floor: _this.state.floor,
           store: store,
           num: 1
+        };
+
+        _this.setState({
+          data: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"])(_this.state.data, [record])
+        });
+      };
+    };
+
+    _this.addDataRecordMinus = function (store) {
+      return function () {
+        var record = {
+          timestamp: Math.round(new Date().getTime() / 1000),
+          floor: _this.state.floor,
+          store: store,
+          num: -1
         };
 
         _this.setState({
@@ -2760,19 +2785,27 @@ function (_super) {
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, store), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         style: {
           position: 'absolute',
-          right: 50
+          right: 90
         }
-      }, data.filter(function (record) {
-        return record.store == store;
-      }).length), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      },
+      /* data.filter(record => record.store == store && record.num == 1).length */
+      countInside(data, store)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        className: "btn btn-primary",
+        style: {
+          position: 'absolute',
+          top: 10,
+          right: 40
+        },
+        onClick: _this.addDataRecord(store)
+      }, "+"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         className: "btn btn-primary",
         style: {
           position: 'absolute',
           top: 10,
           right: 0
         },
-        onClick: _this.addDataRecord(store)
-      }, "+"));
+        onClick: _this.addDataRecordMinus(store)
+      }, "-"));
     })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "end-section"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {

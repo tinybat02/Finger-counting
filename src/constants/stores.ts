@@ -146,3 +146,36 @@ export const ug_stores = [
   'apollo optik',
   'ticketshop',
 ];
+
+export const bus_1 = [
+  'Neuperlach Süd',
+  'Neubiberg, W.-Heisenberg-W.',
+  'Neubiberg',
+  'Neubiberg, Rathaus',
+  'Neubiberg, Kaiserstraße',
+  'Neubiberg, Barbarossastraße',
+  'Neubiberg, Schulzstraße',
+  'Neubiberg, Gymnasium',
+  'Ottobrunn, Erlenstr.',
+  'Ottobrunn, Lenbachallee',
+  'Ottobrunn, Waldstraße',
+  'Putzbrunn, Birkenweg',
+  'Putzbrunn, Eichenstraße',
+  'Putzbrunn, Brennerei',
+  'Putzbrunn, Kirchenzentrum',
+];
+
+export const bus_2 = [
+  'Neuperlach Süd',
+  'Neubiberg, W.-Heisenberg-W.',
+  'Neubiberg',
+  'Neubiberg, Rathaus',
+  'Neubiberg, Kaiserstraße',
+  'Neubiberg, Barbarossastraße',
+  'Neubiberg, Schulzstraße',
+  'Neubiberg, Wotanstraße',
+  'Neubiberg, Lena-Christ-Straße',
+  'Neubiberg, Anzengruberstr.',
+  'Putzbrunn, Neubiberger Straße',
+  'Putzbrunn, Isarweg',
+];

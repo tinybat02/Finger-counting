@@ -2673,10 +2673,20 @@ function (_super) {
           floor: 0,
           storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["eg_stores"]
         }));
-      } else {
+      } else if (this.state.floor == -1) {
         this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
           floor: -1,
           storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["ug_stores"]
+        }));
+      } else if (this.state.floor == 1) {
+        this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
+          floor: 1,
+          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_1"]
+        }));
+      } else if (this.state.floor == 2) {
+        this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
+          floor: 1,
+          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_2"]
         }));
       }
     }
@@ -2713,7 +2723,11 @@ function (_super) {
       value: 0
     }, "Ground Floor"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
       value: -1
-    }, "Basement")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+    }, "Basement"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+      value: 1
+    }, "Bus 1"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+      value: 2
+    }, "Bus 2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
       className: "idropdown",
       value: currentStore,
       onChange: this.handleSelectStore
@@ -2783,15 +2797,19 @@ function (_super) {
 /*!*****************************!*\
   !*** ./constants/stores.ts ***!
   \*****************************/
-/*! exports provided: eg_stores, ug_stores */
+/*! exports provided: eg_stores, ug_stores, bus_1, bus_2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eg_stores", function() { return eg_stores; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ug_stores", function() { return ug_stores; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bus_1", function() { return bus_1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bus_2", function() { return bus_2; });
 var eg_stores = ['AEZ Apotheke', 'Ansons', 'Appelrathcüpper', 'Apple Store', 'Arko Kaffee & Confisirie', 'Asiahung', 'Balducci', 'Bang Olufson', 'Benetton', 'Blume 2000', 'CIGO', 'CK Underwear', 'Calzedonia', 'Chris Juwelier', 'Christ', 'Classico', 'Dechau', 'Douglas', 'EDEKA', 'Emilia Pizza', 'Esprit', 'Eterna', 'Galeria Karstadt Kaufhof', 'Gögge', 'Görtz', 'Hamburger Hof Parfümerie', 'Hugo Boss', 'Hussel Confisserie', 'Initmissimi', 'Jack and Jones', 'Juwelier Cabochon', 'Kaufhof EG', 'Laurel', 'Linderbegh', 'Lindner', 'Liz Malraux', 'Locittane en provence', 'Läderachc Choc', 'Marco Polo', 'Marco Polo Men', 'Mephisto', 'Metzgers', 'Michael Kors', 'Mirabell Dessous', 'Nespresso', 'Neuhaus', 'Nordsee', 'Only', 'Optiker Bode', 'P Ost Michael Kors EG', 'P West Bodyshop EG', 'P West Mirabell EG', 'P West Optiker EG', 'P West Weitz EG', 'Pandora', 'Peek & Cloppenburg', 'Prange', 'Rituals', 'Rohde Frisch & Fruchtig', 'S-Bahn Ausgang Apotheke EG', 'S-Bahn Ausgang Zara EG', 'SOR', 'Schlemmermeyer', 'Schuhkay', 'Sparkasse', 'Stichweg', 'Strenesse', 'Sushi Yama', 'Swarovski', 'Tesla', 'Thai Curry Delhi', 'Thalia', 'The body shop', 'Thomas Sabo', 'Tommy Hilfiger', 'VW City', 'Van Laack', 'Vero Moda', 'Weekend Max Mara', 'Weitz', 'Wolford', 'ZARA', 'Zen Diamond'];
 var ug_stores = ['Ansons', 'Basic Bio für alle', 'Betten Huntenburg', 'Blume 2000', 'Body Beach', 'Body attack', 'Budnikowsky', 'DEINSIM', 'DEPOT', 'Deichmann', 'Del Vino', 'Der Deutsches Reisebüro', 'ECCO', 'Ernstings family', 'Eydeler', 'Falke', 'Fishers Sweet shop', 'Flying Tiger', 'Foot locker', 'Galeria Karstadt Kaufhof', 'H&M', 'HSV Fanshop', 'Hagel', 'Hallmann', 'Hartfelder', 'Herzog und Bräuer', 'Hunkmöller', 'Innocigs', 'Jack Wolfskin', 'Juwelier Rubin', 'Kaufhof UG', 'Litraton Puzzle', 'Multi Express', 'Nanu Nana', 'O2', 'Olymp & Hades', 'P West Blume 2000 UG', 'P West REWE UG', 'Papeterie Bathelt', 'Party Fiesta', 'REWE', 'RWS', 'Reformhaus Engelhardt', 'Schuhkay', 'Sergent Major', 'Smart Repair', 'Sostrene Grene', 'Sport Sperk', 'Studioline Photographie', 'TEE Geschwender', 'TUI', 'TUTTO', 'Tchibo', 'Ulla Popken', 'Violas', 'Vodafone', 'WMF', 'Wolfsdorf Tobacco', 'apollo optik', 'ticketshop'];
+var bus_1 = ['Neuperlach Süd', 'Neubiberg, W.-Heisenberg-W.', 'Neubiberg', 'Neubiberg, Rathaus', 'Neubiberg, Kaiserstraße', 'Neubiberg, Barbarossastraße', 'Neubiberg, Schulzstraße', 'Neubiberg, Gymnasium', 'Ottobrunn, Erlenstr.', 'Ottobrunn, Lenbachallee', 'Ottobrunn, Waldstraße', 'Putzbrunn, Birkenweg', 'Putzbrunn, Eichenstraße', 'Putzbrunn, Brennerei', 'Putzbrunn, Kirchenzentrum'];
+var bus_2 = ['Neuperlach Süd', 'Neubiberg, W.-Heisenberg-W.', 'Neubiberg', 'Neubiberg, Rathaus', 'Neubiberg, Kaiserstraße', 'Neubiberg, Barbarossastraße', 'Neubiberg, Schulzstraße', 'Neubiberg, Wotanstraße', 'Neubiberg, Lena-Christ-Straße', 'Neubiberg, Anzengruberstr.', 'Putzbrunn, Neubiberger Straße', 'Putzbrunn, Isarweg'];
 
 /***/ }),
 

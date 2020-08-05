@@ -2681,12 +2681,14 @@ function (_super) {
       } else if (this.state.floor == 1) {
         this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
           floor: 1,
-          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_1"]
+          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_1"],
+          currentListStore: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_1"]
         }));
       } else if (this.state.floor == 2) {
         this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
-          floor: 1,
-          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_2"]
+          floor: 2,
+          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_2"],
+          currentListStore: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["bus_2"]
         }));
       }
     }

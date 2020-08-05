@@ -52,12 +52,14 @@ export class MainPanel extends PureComponent<Props, State> {
           ...initialState,
           floor: 1,
           storeList: bus_1,
+          currentListStore: bus_1,
         });
       } else if (this.state.floor == 2) {
         this.setState({
           ...initialState,
-          floor: 1,
+          floor: 2,
           storeList: bus_2,
+          currentListStore: bus_2,
         });
       }
     }

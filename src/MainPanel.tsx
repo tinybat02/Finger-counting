@@ -20,6 +20,7 @@ interface State {
   currentListStore: Array<string>;
   data: Array<Record>;
   fileName: string;
+  customStore: string;
 }
 
 const initialState = {
@@ -29,6 +30,7 @@ const initialState = {
   currentListStore: [],
   data: [],
   fileName: '',
+  customStore: '',
 };
 
 const countInside = (data: Record[], storeName: string) => {
@@ -89,6 +91,17 @@ export class MainPanel extends PureComponent<Props, State> {
       this.setState({ currentListStore: [...currentListStore, currentStore] });
   };
 
+  handleAddCustomStore = () => {
+    const { customStore, currentListStore } = this.state;
+    if (customStore != '' && !currentListStore.includes(customStore)) {
+      this.setState(prevState => ({
+        ...prevState,
+        customStore: '',
+        currentListStore: [...currentListStore, customStore],
+      }));
+    }
+  };
+
   handleReset = (e: React.MouseEvent<HTMLButtonElement>) => {
     this.setState({ ...initialState });
   };
@@ -119,9 +132,13 @@ export class MainPanel extends PureComponent<Props, State> {
     this.setState({ fileName: e.target.value });
   };
 
+  handleInputCustomStore = (e: React.ChangeEvent<HTMLInputElement>) => {
+    this.setState({ customStore: e.target.value });
+  };
+
   render() {
     const { width, height } = this.props;
-    const { floor, currentStore, storeList, currentListStore, data, fileName } = this.state;
+    const { floor, currentStore, storeList, currentListStore, data, fileName, customStore } = this.state;
 
     return (
       <div
@@ -156,6 +173,12 @@ export class MainPanel extends PureComponent<Props, State> {
               Reset
             </button>
           </div>
+        </div>
+        <div style={{ display: 'flex' }}>
+          <input className="input-field" onChange={this.handleInputCustomStore} value={customStore} />
+          <button className="btn btn-primary" onClick={this.handleAddCustomStore}>
+            Add Store
+          </button>
         </div>
         <div className="list-style">
           {currentListStore.map(store => (

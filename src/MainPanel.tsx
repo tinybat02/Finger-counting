@@ -153,9 +153,7 @@ export class MainPanel extends PureComponent<Props, State> {
         <div className="iheader">
           <select className="idropdown" value={floor} onChange={this.handleFloorChange}>
             <option value={0}>Ground Floor</option>
-            <option value={-1}>Basement</option>
-            <option value={1}>Bus 1</option>
-            <option value={2}>Bus 2</option>
+            <option value={-1}>1st Floor</option>
           </select>
           <select className="idropdown" value={currentStore} onChange={this.handleSelectStore}>
             <option value="None">None</option>

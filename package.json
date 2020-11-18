@@ -1,7 +1,7 @@
 {
-  "name": "grafana-template",
+  "name": "finger-counting",
   "version": "1.0.0",
-  "description": "Grafana Template",
+  "description": "Finger Couting",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
     "test": "grafana-toolkit plugin:test",

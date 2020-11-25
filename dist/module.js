@@ -2371,9 +2371,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var initialState = {
   floor: 0,
-  storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["eg_stores"],
+  storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"],
   currentStore: 'None',
-  currentListStore: [],
+  currentListStore: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"],
   data: [],
   fileName: '',
   customStore: ''
@@ -2489,7 +2489,8 @@ function (_super) {
       if (this.state.floor == 0) {
         this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
           floor: 0,
-          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["eg_stores"]
+          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"],
+          currentListStore: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"]
         }));
       } else if (this.state.floor == -1) {
         this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
@@ -2633,15 +2634,17 @@ function (_super) {
 /*!*****************************!*\
   !*** ./constants/stores.ts ***!
   \*****************************/
-/*! exports provided: eg_stores, ug_stores, bus_1, bus_2 */
+/*! exports provided: prak, eg_stores, ug_stores, bus_1, bus_2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prak", function() { return prak; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eg_stores", function() { return eg_stores; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ug_stores", function() { return ug_stores; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bus_1", function() { return bus_1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bus_2", function() { return bus_2; });
+var prak = ['Praktiker'];
 var eg_stores = ['Toni Tänzer Platform', 'Kinderbetreuung', 'Telekom Shop', 'Penny', 'Trendstore', 'Haupteingang', 'Tally Weijl', 'Bruzzes Weinwelt', 'Parfümerie Akzente', 'Optikwelt', 'Takko Fashion', 'Schlüsseldienst Phonerep', 'Favors! by cbr', 'Alona Schmuck', 'Woll-Studio', 'Hintereingang', 'Sparkasse', 'BOX', 'Cafe im Ö', 'REWE', 'Quickschuh', 'Grabert', 'Kamps', 'Setzer'];
 var ug_stores = ['Shoetown Werdich', 'Team 5', 'Intersport Grabert', 'Vielseitig Bücher', 'Haucks Schnitzelwelt', 'Eingang OG', 'Injoy', 'Brautmoden Fabian', 'Modehaus Bär'];
 var bus_1 = ['Neuperlach Süd', 'Neubiberg, W.-Heisenberg-W.', 'Neubiberg', 'Neubiberg, Rathaus', 'Neubiberg, Kaiserstraße', 'Neubiberg, Barbarossastraße', 'Neubiberg, Schulzstraße', 'Neubiberg, Gymnasium', 'Ottobrunn, Erlenstr.', 'Ottobrunn, Lenbachallee', 'Ottobrunn, Waldstraße', 'Putzbrunn, Birkenweg', 'Putzbrunn, Eichenstraße', 'Putzbrunn, Brennerei', 'Putzbrunn, Kirchenzentrum'];

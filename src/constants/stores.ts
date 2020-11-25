@@ -1,3 +1,5 @@
+export const prak = ['Praktiker'];
+
 export const eg_stores = [
   'Toni Tänzer Platform',
   'Kinderbetreuung',

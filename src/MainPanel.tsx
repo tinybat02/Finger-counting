@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { PanelProps } from '@grafana/data';
 import { PanelOptions } from 'types';
 import { CSVLink } from 'react-csv';
-import { eg_stores, ug_stores, bus_1, bus_2 } from './constants/stores';
+import { prak, /* eg_stores, */ ug_stores, bus_1, bus_2 } from './constants/stores';
 
 import './style/index.css';
 
@@ -25,9 +25,9 @@ interface State {
 
 const initialState = {
   floor: 0,
-  storeList: eg_stores,
+  storeList: prak,
   currentStore: 'None',
-  currentListStore: [],
+  currentListStore: prak,
   data: [],
   fileName: '',
   customStore: '',
@@ -51,7 +51,8 @@ export class MainPanel extends PureComponent<Props, State> {
         this.setState({
           ...initialState,
           floor: 0,
-          storeList: eg_stores,
+          storeList: prak,
+          currentListStore: prak,
         });
       } else if (this.state.floor == -1) {
         this.setState({

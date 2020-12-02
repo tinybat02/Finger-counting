@@ -2371,9 +2371,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var initialState = {
   floor: 0,
-  storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"],
+  storeList: [],
   currentStore: 'None',
-  currentListStore: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"],
+  currentListStore: [],
   data: [],
   fileName: '',
   customStore: ''
@@ -2489,8 +2489,8 @@ function (_super) {
       if (this.state.floor == 0) {
         this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
           floor: 0,
-          storeList: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"],
-          currentListStore: _constants_stores__WEBPACK_IMPORTED_MODULE_3__["prak"]
+          storeList: [],
+          currentListStore: []
         }));
       } else if (this.state.floor == -1) {
         this.setState(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, initialState), {
@@ -2520,10 +2520,9 @@ function (_super) {
         width = _a.width,
         height = _a.height;
     var _b = this.state,
-        floor = _b.floor,
-        currentStore = _b.currentStore,
-        storeList = _b.storeList,
-        currentListStore = _b.currentListStore,
+
+    /* floor, currentStore, storeList, */
+    currentListStore = _b.currentListStore,
         data = _b.data,
         fileName = _b.fileName,
         customStore = _b.customStore;
@@ -2536,38 +2535,6 @@ function (_super) {
         overflow: 'scroll'
       }
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "iheader"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
-      className: "idropdown",
-      value: floor,
-      onChange: this.handleFloorChange
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-      value: 0
-    }, "Ground Floor"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-      value: -1
-    }, "1st Floor")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
-      className: "idropdown",
-      value: currentStore,
-      onChange: this.handleSelectStore
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-      value: "None"
-    }, "None"), storeList.map(function (storeName) {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-        key: storeName,
-        value: storeName
-      }, storeName);
-    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "ibuttons"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      className: "btn btn-primary",
-      style: {
-        marginLeft: 5
-      },
-      onClick: this.handleAddStore
-    }, "Add"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      className: "btn btn-primary",
-      onClick: this.handleReset
-    }, "Reset"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       style: {
         display: 'flex'
       }

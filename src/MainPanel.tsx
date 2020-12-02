@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { PanelProps } from '@grafana/data';
 import { PanelOptions } from 'types';
 import { CSVLink } from 'react-csv';
-import { prak, /* eg_stores, */ ug_stores, bus_1, bus_2 } from './constants/stores';
+import { /* prak, */ /* eg_stores, */ ug_stores, bus_1, bus_2 } from './constants/stores';
 
 import './style/index.css';
 
@@ -25,9 +25,9 @@ interface State {
 
 const initialState = {
   floor: 0,
-  storeList: prak,
+  storeList: [],
   currentStore: 'None',
-  currentListStore: prak,
+  currentListStore: [],
   data: [],
   fileName: '',
   customStore: '',
@@ -51,8 +51,8 @@ export class MainPanel extends PureComponent<Props, State> {
         this.setState({
           ...initialState,
           floor: 0,
-          storeList: prak,
-          currentListStore: prak,
+          storeList: [],
+          currentListStore: [],
         });
       } else if (this.state.floor == -1) {
         this.setState({
@@ -139,7 +139,7 @@ export class MainPanel extends PureComponent<Props, State> {
 
   render() {
     const { width, height } = this.props;
-    const { floor, currentStore, storeList, currentListStore, data, fileName, customStore } = this.state;
+    const { /* floor, currentStore, storeList, */ currentListStore, data, fileName, customStore } = this.state;
 
     return (
       <div
@@ -151,7 +151,7 @@ export class MainPanel extends PureComponent<Props, State> {
           overflow: 'scroll',
         }}
       >
-        <div className="iheader">
+        {/*         <div className="iheader">
           <select className="idropdown" value={floor} onChange={this.handleFloorChange}>
             <option value={0}>Ground Floor</option>
             <option value={-1}>1st Floor</option>
@@ -172,7 +172,7 @@ export class MainPanel extends PureComponent<Props, State> {
               Reset
             </button>
           </div>
-        </div>
+        </div> */}
         <div style={{ display: 'flex' }}>
           <input className="input-field" onChange={this.handleInputCustomStore} value={customStore} />
           <button className="btn btn-primary" onClick={this.handleAddCustomStore}>

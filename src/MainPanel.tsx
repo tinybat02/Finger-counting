@@ -12,6 +12,7 @@ interface Record {
   floor: number;
   num: number;
 }
+
 interface Props extends PanelProps<PanelOptions> {}
 interface State {
   floor: number;
